@@ -89,6 +89,7 @@ streamlit==1.32.2
 sympy==1.12
 tenacity==8.2.3
 tifffile==2023.7.10
+CMake
 tk==0.1.0
 toml==0.10.2
 toolz==0.12.1

@@ -38,6 +38,7 @@ def insert_records(text_info):
     mycursor.execute(sql,value)
 
     mydb.commit()
+    
 
 def fetch_records(text_info):
 
@@ -57,7 +58,9 @@ def fetch_records(text_info):
     else:
         return pd.DataFrame()
     
-    def check_duiplicates(text_info):
+
+
+def check_duiplicates(text_info):
 
         is_duplicate=False
         df=fetch_records(text_info)
@@ -68,3 +71,5 @@ def fetch_records(text_info):
 
         
         return is_duplicate
+    
+   
